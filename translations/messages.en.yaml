@@ -1,0 +1,12 @@
+base:
+    welcome: "Welcome!"
+    iss_location: "ISS location"
+    iss_update: "Update"
+    iss_altitude: "Altitude"
+    iss_latitude: "Lalitude"
+    iss_longitude: "Longitude"
+    iss_visibility: "Visibility"
+    home: "Home"
+    about: "About"
+    contact: "Contact"
+    start: "Get started"

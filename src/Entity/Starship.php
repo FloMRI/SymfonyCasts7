@@ -27,7 +27,7 @@ class Starship
     private ?StarshipStatusEnum $status = null;
 
     #[ORM\Column]
-    private ?\DateTimeImmutable $arriveAt = null;
+    private ?\DateTimeImmutable $arrivedAt = null;
 
     public function getId(): ?int
     {
@@ -82,14 +82,14 @@ class Starship
         return $this;
     }
 
-    public function getArriveAt(): ?\DateTimeImmutable
+    public function getArrivedAt(): ?\DateTimeImmutable
     {
-        return $this->arriveAt;
+        return $this->arrivedAt;
     }
 
-    public function setArriveAt(\DateTimeImmutable $arriveAt): static
+    public function setArrivedAt(\DateTimeImmutable $arrivedAt): static
     {
-        $this->arriveAt = $arriveAt;
+        $this->arrivedAt = $arrivedAt;
 
         return $this;
     }
@@ -107,4 +107,5 @@ class Starship
             StarshipStatusEnum::COMPLETED => 'images/status-complete.png',
         };
     }
+
 }
